@@ -1,0 +1,193 @@
+
+header{
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+
+#logo{
+    background-color:white;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    animation-name: colores;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+
+div:hover{transform: translate(30px,50px);
+    transform: scale (2,1);
+    transition: height 1s, width 3s;
+    
+}
+
+@keyframes colores{
+100% {transform: scale (2,1);}}
+
+
+
+
+img{
+    width: 30%;
+    height: 30%;
+}
+
+#menup{
+    width: 25%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:white;
+    flex-wrap: nowrap;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 150px 150px 150px 150px;
+    grid-template-areas: "menu menu2 menu2 menu2 menu2";
+    justify-items: center;
+    align-items: center;
+}
+
+#menu{
+    background-color: grey;
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    color: honeydew;
+    display:none;}
+
+
+#menu2{
+    background-color: grey;
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    color: honeydew;
+    }
+     
+
+
+
+#cajaflex{
+    height: 600px;
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: "cajauno" 
+    "cajados" 
+    "cajatres";
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+#cajauno{
+background-color:white;
+height: 150px;
+width: 100%;
+font-size: 30px;
+color: honeydew;
+grid-area: banner productos;
+grid-template-columns: 30% 30% 30%;
+grid-template-areas: "perfil1 perfil2 perfil3";
+
+
+}
+
+#cajados{
+    background-color:white;
+    height: 150px;
+    width: 100%;
+    font-size: 30px;
+    color: honeydew;
+    grid-area: nuevos productos;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "art1 art2 art3 art4 art5";
+}
+
+#cajatres{
+        background-color:white;
+        height: 150px;
+        width: 100%;
+        font-size: 30px;
+        color: honeydew;
+
+        grid-area: "combos productos";
+ }
+
+
+ footer{
+    color: slategray;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 100px 200px 200px 100px;
+    grid-template-areas: "contactos mapa mapa redes"
+                        "contactos mapa mapa redes"
+                        "contactos pagos envios redes"
+                        "contactos pagos envios redes" ;
+}
+
+.contactos{
+    grid-area: contactos; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.mapa{
+    grid-area: mapa;
+    text-align: center;    
+}
+.pagos{
+    text-align: center;
+    text-transform: uppercase;
+    }
+.envios{
+    grid-area: envios;
+    flex-direction: column; 
+    text-transform: uppercase;
+    text-align: center;
+}
+.redes{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    }
+
+h5{font-size: 1.5em; }
+    .contactos>p, .redes>p{padding-bottom: 2em;}
+    .contactos>a, .redes>a{padding-bottom: 2em; text-decoration: none; color: grey;}
+
+
+@media only screen and (max-width:600px){
+        #footer{
+            flex-direction: row;}
+        }
+        
+@media only screen and (min-width:600px){
+            #footer{
+                color: whitesmoke;}
+        }
+        
+ @media only screen and (min-width:768px){
+            #footer{
+                color: whitesmoke;}
+        }
+               
+@media only screen and (min-width:1200px){
+            #footer{
+                color: whitesmoke;}
+        }
